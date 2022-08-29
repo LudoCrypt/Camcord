@@ -1,0 +1,113 @@
+{
+	"targets": [
+		"swap",
+		"bokehA",
+		"bokehB",
+		"bokehC",
+		"bokehD",
+		"bokehFinish"
+	],
+	"passes": [
+		{
+			"name": "blit",
+			"intarget": "minecraft:main",
+			"outtarget": "swap"
+		},
+		{
+			"name": "camcord:bokeh",
+			"intarget": "swap",
+			"outtarget": "bokehA",
+			"uniforms": [
+				{
+					"name": "blurNormal",
+					"values": [
+						1.0,
+						0.0
+					]
+				},
+				{
+					"name": "firstPass",
+					"values": [
+						1.0
+					]
+				}
+			]
+		},
+		{
+			"name": "camcord:bokeh",
+			"intarget": "bokehA",
+			"outtarget": "bokehB",
+			"uniforms": [
+				{
+					"name": "blurNormal",
+					"values": [
+						0.0,
+						1.0
+					]
+				},
+				{
+					"name": "firstPass",
+					"values": [
+						0.0
+					]
+				}
+			]
+		},
+		{
+			"name": "camcord:bokeh",
+			"intarget": "swap",
+			"outtarget": "bokehC",
+			"uniforms": [
+				{
+					"name": "blurNormal",
+					"values": [
+						1.0,
+						1.0
+					]
+				},
+				{
+					"name": "firstPass",
+					"values": [
+						1.0
+					]
+				}
+			]
+		},
+		{
+			"name": "camcord:bokeh",
+			"intarget": "bokehC",
+			"outtarget": "bokehD",
+			"uniforms": [
+				{
+					"name": "blurNormal",
+					"values": [
+						1.0,
+						-1.0
+					]
+				},
+				{
+					"name": "firstPass",
+					"values": [
+						0.0
+					]
+				}
+			]
+		},
+		{
+			"name": "camcord:bokeh_finish",
+			"intarget": "bokehB",
+			"outtarget": "bokehFinish",
+			"auxtargets": [
+				{
+					"name": "Bokeh",
+					"id": "bokehD"
+				}
+			]
+		},
+		{
+			"name": "blit",
+			"intarget": "bokehFinish",
+			"outtarget": "minecraft:main"
+		}
+	]
+}

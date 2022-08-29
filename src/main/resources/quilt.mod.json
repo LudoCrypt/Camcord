@@ -1,0 +1,40 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "net.ludocrypt",
+		"id": "camcord",
+		"version": "${version}",
+		"metadata": {
+			"name": "Camcord",
+			"description": "A Simple VHS Filter",
+			"contributors": {
+				"LudoCrypt": "Developer"
+			},
+			"contact": {
+				"homepage": "https://github.com/LudoCrypt/Camcord",
+				"issues": "https://github.com/LudoCrypt/Camcord/issues",
+				"sources": "https://github.com/LudoCrypt/Camcord"
+			},
+			"icon": "assets/camcord/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"client_init": "net.ludocrypt.camcord.Camcord",
+			"modmenu": "net.ludocrypt.camcord.config.CamcordModmenu"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=4.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.2"
+			}
+		]
+	}
+}

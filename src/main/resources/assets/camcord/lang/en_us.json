@@ -1,0 +1,9 @@
+{
+	"camcord.key.vhs": "Toggle VHS",
+	"text.autoconfig.camcord.option.fisheyeZoom": "Fisheye Zoom (inverse)",
+	"text.autoconfig.camcord.option.fisheyeScale": "Fisheye Scale (inverse)",
+	"text.autoconfig.camcord.option.fisheyePinch": "Fisheye Pinch (inverse)",
+	"text.autoconfig.camcord.option.nearPlane": "Near Plane",
+	"text.autoconfig.camcord.option.farPlane": "Far Plane",
+	"text.autoconfig.camcord.option.boarder": "Boarder"
+}

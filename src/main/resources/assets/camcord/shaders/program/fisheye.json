@@ -1,0 +1,75 @@
+{
+	"blend": {
+		"func": "add",
+		"srcrgb": "one",
+		"dstrgb": "zero"
+	},
+	"vertex": "camcord:fisheye",
+	"fragment": "camcord:fisheye",
+	"attributes": [
+		"Position"
+	],
+	"samplers": [
+		{
+			"name": "DiffuseSampler"
+		}
+	],
+	"uniforms": [
+		{
+			"name": "ProjMat",
+			"type": "matrix4x4",
+			"count": 16,
+			"values": [
+				1.0,
+				0.0,
+				0.0,
+				0.0,
+				0.0,
+				1.0,
+				0.0,
+				0.0,
+				0.0,
+				0.0,
+				1.0,
+				0.0,
+				0.0,
+				0.0,
+				0.0,
+				1.0
+			]
+		},
+		{
+			"name": "InSize",
+			"type": "float",
+			"count": 2,
+			"values": [
+				1.0,
+				1.0
+			]
+		},
+		{
+			"name": "C1",
+			"type": "float",
+			"count": 1,
+			"values": [
+				1.919862177193763
+			]
+		},
+		{
+			"name": "C2",
+			"type": "float",
+			"count": 1,
+			"values": [
+				0.350103769104855
+			]
+		},
+		{
+			"name": "zoomFactor",
+			"type": "float",
+			"count": 1,
+			"values": [
+				1.207
+			]
+		}
+	]
+}
