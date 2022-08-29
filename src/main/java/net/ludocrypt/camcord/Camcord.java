@@ -42,6 +42,7 @@ public class Camcord implements ClientModInitializer {
 				shouldRender = !shouldRender;
 			}
 		});
+
 		ShaderEffectRenderCallback.EVENT.register((tickDelta) -> {
 			if (shouldRender) {
 				BOKEH.setUniformValue("nearPlane", CamcordConfig.getInstance().nearPlane);
@@ -59,7 +60,6 @@ public class Camcord implements ClientModInitializer {
 				}
 			}
 		});
-
 	}
 
 }
