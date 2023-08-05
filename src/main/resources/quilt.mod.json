@@ -8,7 +8,8 @@
 			"name": "Camcord",
 			"description": "A Simple VHS Filter",
 			"contributors": {
-				"LudoCrypt": "Developer"
+				"LudoCrypt": "Developer",
+				"MCLegoMan": "Contributor"
 			},
 			"contact": {
 				"homepage": "https://www.curseforge.com/minecraft/mc-mods/camcord",
@@ -19,8 +20,8 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"client_init": "net.ludocrypt.camcord.Camcord",
-			"modmenu": "net.ludocrypt.camcord.config.CamcordModmenu"
+			"client_init": "net.ludocrypt.camcord.client.CamcordClient",
+			"modmenu": "net.ludocrypt.camcord.compat.CamcordModMenu"
 		},
 		"depends": [
 			{
