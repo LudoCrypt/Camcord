@@ -1,7 +1,5 @@
 package net.ludocrypt.camcord.common.data;
 
-import net.fabricmc.loader.api.FabricLoader;
-import net.fabricmc.loader.api.ModContainer;
 import net.ludocrypt.camcord.common.util.CamcordLogType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

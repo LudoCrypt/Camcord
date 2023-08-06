@@ -9,7 +9,6 @@ import net.ludocrypt.camcord.common.data.CamcordData;
 import net.ludocrypt.camcord.common.util.CamcordLogType;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.Identifier;
-
 import java.util.function.Consumer;
 
 public class CamcordShaders {
