@@ -1,9 +1,15 @@
 {
-	"camcord.key.vhs": "Toggle VHS",
-	"text.autoconfig.camcord.option.fisheyeZoom": "Fisheye Zoom (inverse)",
-	"text.autoconfig.camcord.option.fisheyeScale": "Fisheye Scale (inverse)",
-	"text.autoconfig.camcord.option.fisheyePinch": "Fisheye Pinch (inverse)",
-	"text.autoconfig.camcord.option.nearPlane": "Near Plane",
-	"text.autoconfig.camcord.option.farPlane": "Far Plane",
-	"text.autoconfig.camcord.option.boarder": "Boarder"
+  "text.autoconfig.camcord.title": "Camcord Config",
+  "text.autoconfig.camcord.option.enabled": "Enabled",
+  "text.autoconfig.camcord.option.enabled.@Tooltip": "Toggles Camcord shader.",
+  "text.autoconfig.camcord.option.fisheyeZoom": "Fisheye Zoom (inverse)",
+  "text.autoconfig.camcord.option.fisheyeScale": "Fisheye Scale (inverse)",
+  "text.autoconfig.camcord.option.fisheyePinch": "Fisheye Pinch (inverse)",
+  "text.autoconfig.camcord.option.nearPlane": "Near Plane",
+  "text.autoconfig.camcord.option.farPlane": "Far Plane",
+  "text.autoconfig.camcord.option.boarder": "Boarder",
+  "text.autoconfig.camcord.option.boarder.@Tooltip": "Toggles vhs boarder on Camcord shader.",
+  "camcord.keybinding.category": "Camcord",
+  "camcord.keybinding.toggle": "Toggle Camcord Shader",
+  "camcord.keybinding.config": "Open Camcord Config"
 }
