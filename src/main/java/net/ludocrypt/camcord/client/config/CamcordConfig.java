@@ -16,6 +16,10 @@ public class CamcordConfig implements ConfigData {
 	public float nearPlane = 1.0F;
 	public float farPlane = 100.0F;
 	@ConfigEntry.Gui.Tooltip()
+	public boolean boken = true;
+	@ConfigEntry.Gui.Tooltip()
+	public boolean fisheye = true;
+	@ConfigEntry.Gui.Tooltip()
 	public boolean boarder = true;
 	private static ConfigHolder<CamcordConfig> getConfigHolder() { return AutoConfig.getConfigHolder(CamcordConfig.class); }
 	public static CamcordConfig getInstance() { return getConfigHolder().getConfig(); }
