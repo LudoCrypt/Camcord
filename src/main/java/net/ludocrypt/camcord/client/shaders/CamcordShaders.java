@@ -32,8 +32,13 @@ public class CamcordShaders {
 				SHADER_FISH_EYE.setUniformValue("C2", CamcordConfig.getInstance().fisheyeScale);
 				SHADER_FISH_EYE.setUniformValue("zoomFactor", CamcordConfig.getInstance().fisheyePinch);
 
-				SHADER_BOKEH.render(tickDelta);
-				SHADER_FISH_EYE.render(tickDelta);
+				if (CamcordConfig.getInstance().boken) {
+					SHADER_BOKEH.render(tickDelta);
+				}
+
+				if (CamcordConfig.getInstance().fisheye) {
+					SHADER_FISH_EYE.render(tickDelta);
+				}
 
 				if (CamcordConfig.getInstance().boarder) {
 					SHADER_VHS.render(tickDelta);

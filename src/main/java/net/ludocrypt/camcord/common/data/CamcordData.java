@@ -8,7 +8,7 @@ public class CamcordData {
 	public static final String NAME = "Camcord";
 	public static final String ID = "camcord";
 	public static final Integer MAJOR_VERSION = 1;
-	public static final Integer MINOR_VERSION = 1;
+	public static final Integer MINOR_VERSION = 2;
 	public static final Integer PATCH_VERSION = 0;
 	public static final String VERSION = MAJOR_VERSION + "." + MINOR_VERSION + "." + PATCH_VERSION;
 	public static final String PREFIX = "[" + NAME + " " + VERSION + "] ";
